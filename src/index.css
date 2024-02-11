@@ -61,15 +61,17 @@ code {
 
 .meal-container {
 
-   flex: 1;
+   /* flex: 1; */
    display: flex;
+
+   /* margin-bottom: 30px; */
+   /* padding-bottom: 20px; */
    overflow-y: scroll;
-   margin-bottom: 30px;
+
 
 }
 
 .meal-list {
-
    flex: 1;
    display: flex;
    flex-wrap: wrap;
@@ -77,8 +79,8 @@ code {
    align-items: center;
    gap: 40px;
    padding: 40px;
-
-
+   font-size: 40px;
+   font-weight: 700;
 }
 
 .side-bar {
@@ -135,4 +137,5 @@ code {
    color: whitesmoke;
    text-align: center;
    padding: 4px;
+   margin-top: 20px;
 }
