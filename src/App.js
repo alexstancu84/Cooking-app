@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import HeaderComponent from "./components/HeaderComponent";
+import MealComponent from "./components/MealComponent";
+import MealContainer from "./components/MealContainer";
+import SearchForm from "./components/SearchForm";
+import NavBar from "./components/NavBar";
+import MealList from "./components/MealList";
+import SideBar from "./components/SideBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const [Meals, setMeals] = useState([]);
+   console.log(Meals);
+
+   return (
+      <div className="App">
+         <HeaderComponent>
+            <NavBar></NavBar>
+            <SearchForm Meals={Meals} setMeals={setMeals}></SearchForm>
+         </HeaderComponent>
+         <MealContainer>
+            <SideBar></SideBar>
+            <MealList>
+               {Meals
+                  ? Meals.map((meal) => (
+                       <MealComponent
+                          meal={meal}
+                          key={meal.idMeal}
+                       ></MealComponent>
+                    ))
+                  : "Meal not found"}
+            </MealList>
+         </MealContainer>
+      </div>
+   );
 }
 
 export default App;
