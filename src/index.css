@@ -5,7 +5,7 @@ body {
       sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background-color: #999;
+   background-color: #bcbcbc;
 }
 
 code {
@@ -28,6 +28,7 @@ code {
    flex-wrap: wrap;
    padding: 10px;
    color: #333;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .header span {
@@ -63,7 +64,8 @@ code {
    flex: 1;
    display: flex;
    overflow-y: scroll;
-   margin-top: 20px;
+   padding-top: 25px;
+   margin-top: 10px;
 }
 
 .meal-list {
