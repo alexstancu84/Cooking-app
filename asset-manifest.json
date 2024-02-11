@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Cooking-app/static/css/main.d489cbc3.css",
+    "main.css": "/Cooking-app/static/css/main.0111321a.css",
     "main.js": "/Cooking-app/static/js/main.ef2a598d.js",
     "index.html": "/Cooking-app/index.html",
-    "main.d489cbc3.css.map": "/Cooking-app/static/css/main.d489cbc3.css.map",
+    "main.0111321a.css.map": "/Cooking-app/static/css/main.0111321a.css.map",
     "main.ef2a598d.js.map": "/Cooking-app/static/js/main.ef2a598d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d489cbc3.css",
+    "static/css/main.0111321a.css",
     "static/js/main.ef2a598d.js"
   ]
 }
