@@ -6,6 +6,7 @@ import SearchForm from "./components/SearchForm";
 import NavBar from "./components/NavBar";
 import MealList from "./components/MealList";
 import SideBar from "./components/SideBar";
+import FooterComponent from "./components/FooterComponent";
 
 function App() {
    const [Meals, setMeals] = useState([]);
@@ -30,6 +31,7 @@ function App() {
                   : "Meal not found"}
             </MealList>
          </MealContainer>
+         <FooterComponent></FooterComponent>
       </div>
    );
 }
